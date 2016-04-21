@@ -28,6 +28,16 @@ $ mix doc
 
 To know detail, see [ex_doc](https://github.com/elixir-lang/ex_doc).
 
+## Static analsys
+
+You can check statically analyze via the command line as follows:
+
+```
+$ mix do dialyzer.plt, dialyzer
+```
+
+To know detail, see [dialyxir](https://github.com/jeremyjh/dialyxir).
+
 ## License
 
 The project is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
