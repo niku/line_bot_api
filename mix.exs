@@ -31,7 +31,8 @@ defmodule LineBotApi.Mixfile do
   defp deps do
     [{:earmark, "~> 0.1", only: :dev},
      {:ex_doc, "~> 0.11", only: :dev},
-     {:dialyxir, "~> 0.3", only: :dev}]
+     {:dialyxir, "~> 0.3", only: :dev},
+     {:credo, "~> 0.3", only: :dev}]
   end
 
   defp description do

@@ -38,6 +38,16 @@ $ mix do dialyzer.plt, dialyzer
 
 To know detail, see [dialyxir](https://github.com/jeremyjh/dialyxir).
 
+## Linting
+
+You can lint via the command line as follows:
+
+```
+$ mix credo --strict
+```
+
+To know detail, see [credo](https://github.com/rrrene/credo).
+
 ## License
 
 The project is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
