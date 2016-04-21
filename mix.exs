@@ -7,6 +7,8 @@ defmodule LineBotApi.Mixfile do
      elixir: "~> 1.2",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
+     description: description,
+     package: package,
      deps: deps]
   end
 
@@ -28,5 +30,15 @@ defmodule LineBotApi.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     []
+  end
+
+  defp description do
+    "LINE BOT API implementation for the ErlangVM"
+  end
+
+  defp package do
+    [maintainers: ["niku"],
+     licenses: ["MIT"],
+     links: %{"GitHub" => "https://github.com/niku/line_bot_api"}]
   end
 end
