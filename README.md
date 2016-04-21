@@ -18,6 +18,16 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
           [applications: [:line_bot_api]]
         end
 
+## Documentation
+
+You can generate documentation via the command line as follows:
+
+```
+$ mix doc
+```
+
+To know detail, see [ex_doc](https://github.com/elixir-lang/ex_doc).
+
 ## License
 
 The project is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).

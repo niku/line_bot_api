@@ -29,7 +29,8 @@ defmodule LineBotApi.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [{:earmark, "~> 0.1", only: :dev},
+     {:ex_doc, "~> 0.11", only: :dev}]
   end
 
   defp description do
@@ -39,6 +40,7 @@ defmodule LineBotApi.Mixfile do
   defp package do
     [maintainers: ["niku"],
      licenses: ["MIT"],
-     links: %{"GitHub" => "https://github.com/niku/line_bot_api"}]
+     links: %{"GitHub" => "https://github.com/niku/line_bot_api",
+              "Docs" => "https://hexdocs.pm/line_bot_api"}]
   end
 end
