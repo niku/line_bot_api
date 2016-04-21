@@ -1,0 +1,2 @@
+defmodule LineBotApi do
+end
