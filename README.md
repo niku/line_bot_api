@@ -1,5 +1,7 @@
 # LineBotApi
 
+[![Build Status](https://travis-ci.org/niku/line_bot_api.svg?branch=master)](https://travis-ci.org/niku/line_bot_api)
+
 LINE BOT API implementation for the ErlangVM
 
 ## Installation
