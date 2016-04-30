@@ -28,3 +28,8 @@ use Mix.Config
 # here (which is why it is important to import them last).
 #
 #     import_config "#{Mix.env}.exs"
+
+config :line_bot_api,
+  channel_id: System.get_env("LINE_CHANNEL_ID"),
+  channel_secret: System.get_env("LINE_CHANNEL_SECRET"),
+  channel_mid: System.get_env("LINE_CHANNEL_MID")
