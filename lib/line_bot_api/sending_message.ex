@@ -26,4 +26,15 @@ defmodule LineBotApi.SendingMessage do
       "content"   => content_type.for_request(content)
     }
   end
+
+  @doc """
+  Send a message to users which are represented by id
+  """
+  @spec send(LineBotApi.AccessToken.t, [String.t], LineBotApi.SendingMessage.Content.t, (String.t, %{}, %{}, Keyword.t -> any)) :: any
+  def send(access_token, to, content, client \\ &HTTPoison.post/4) do
+    body = for_request(to, content)
+    headers = LineBotApi.AccessToken.for_request(access_token)
+
+    client.(@endpoint_url, body, headers, [])
+  end
 end
